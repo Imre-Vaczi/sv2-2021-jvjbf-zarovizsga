@@ -70,7 +70,7 @@ class ShippingServiceTest {
         assertEquals(1,result.get("England"));
     }
 
-/*    @Test
+    @Test
     void testSortInternationalPackagesByDistance(){
         List<Transportable> result = shippingService.sortInternationalPackagesByDistance();
         assertEquals(3800, ((InternationalPackage)shippingService.getPackages().get(4)).getDistance());
@@ -86,7 +86,7 @@ class ShippingServiceTest {
 
         assertEquals("Slovakia",result.get(0).getDestinationCountry());
 
-    }*/
+    }
 
 
 }

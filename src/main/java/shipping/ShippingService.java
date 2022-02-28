@@ -43,7 +43,8 @@ public class ShippingService {
     public List<Transportable> sortInternationalPackagesByDistance() {
         List<Transportable> result = new ArrayList<>(packages);
         result = result.stream().filter(i -> !i.getDestinationCountry().equals("Hungary")).toList();
-        //result.stream().sorted(Comparator.comparing((InternationalPackage)i -> i.getDistance()));
+        //result.stream().sorted(Comparator.comparing((InternationalPackage p) -> p.getDistance();
+        result.stream().sorted(Comparator.comparing(i -> i.getDistance()));
         return result;
     }
 }

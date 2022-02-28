@@ -11,4 +11,8 @@ public interface Transportable {
     default String getDestinationCountry() {
         return "Hungary";
     }
+
+    default int getDistance() {
+        return 0;
+    }
 }
